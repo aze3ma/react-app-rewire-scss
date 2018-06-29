@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "author": "Mahmoud Abdulazim <aze3ma@gmail.com>",
-  "homepage": "https://github.com/aze3ma/react-app-rewire-sass",
-  "bugs": "https://github.com/aze3ma/react-app-rewire-sass/issues",
+  "homepage": "https://github.com/aze3ma/react-app-rewire-scss",
+  "bugs": "https://github.com/aze3ma/react-app-rewire-scss/issues",
   "repository": {
-    "url": "https://github.com/aze3ma/react-app-rewire-sass",
+    "url": "https://github.com/aze3ma/react-app-rewire-scss",
     "type": "git"
   },
   "peerDependencies": {
