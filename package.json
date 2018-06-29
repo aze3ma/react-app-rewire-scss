@@ -14,9 +14,8 @@
 		"node-sass": "^4.9.0",
 		"sass-loader": "^7.0.3"
 	},
-	"devDependencies": {
-		"css-loader": "^0.28.11",
-		"react-app-rewired": "^1.5.2",
-		"webpack": "^4.14.0"
+	"devDependencies": {},
+	"peerDependencies": {
+		"react-app-rewired": "^1.5.2"
 	}
 }
