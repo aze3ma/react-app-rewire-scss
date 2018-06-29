@@ -1,10 +1,8 @@
 const path = require('path');
 const { getLoader, loaderNameMatches } = require('react-app-rewired');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 function createRewireSass(sassLoaderOptions = {}) {
 	return function(config, env) {
-		const sassLoaderOptions = {};
 		const sassExtension = /(\.scss|\.sass)$/;
 		const devMode = env !== 'production';
 		const fileLoader = getLoader(config.module.rules, rule => loaderNameMatches(rule, 'file-loader'));
@@ -12,16 +10,17 @@ function createRewireSass(sassLoaderOptions = {}) {
 		fileLoader.exclude.push(sassExtension);
 
 		const cssRules = getLoader(config.module.rules, rule => String(rule.test) === String(/\.css$/));
+		var sassRules;
 
 		if (devMode) {
-			var sassRules = {
+			sassRules = {
 				test: sassExtension,
 				use: [...cssRules.use, { loader: 'sass-loader', options: sassLoaderOptions }],
 			};
 		} else {
-			var sassRules = {
+			sassRules = {
 				test: sassExtension,
-				use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
+				use: [...cssRules.loader, { loader: 'less-loader', options: lessLoaderOptions }],
 			};
 		}
 

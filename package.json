@@ -10,14 +10,12 @@
     "url": "https://github.com/aze3ma/react-app-rewire-scss",
     "type": "git"
   },
-  "peerDependencies": {
-    "react-app-rewired": "^1.5.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "css-loader": "^0.28.11",
-    "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.0",
+    "react-app-rewired": "^1.5.2",
     "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0"
+    "webpack": "^4.14.0"
   }
 }
