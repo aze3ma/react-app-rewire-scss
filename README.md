@@ -5,7 +5,8 @@ You might not need this rewire, Create React App added guide about how to add Sa
 # Install
 
 ```bash
-$ npm install --save react-app-rewire-sass
+$ yarn add react-app-rewire-scss
+$ npm install --save react-app-rewire-scss
 ```
 
 # Add it to your project
