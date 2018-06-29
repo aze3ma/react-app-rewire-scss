@@ -1,6 +1,6 @@
 {
-  "name": "react-app-rewire-sass",
-  "version": "1.0.0",
+  "name": "react-app-rewire-sass-v2",
+  "version": "2.0.0",
   "main": "index.js",
   "license": "MIT",
   "author": "Mahmoud Abdulazim <aze3ma@gmail.com>",
@@ -9,5 +9,12 @@
   "repository": {
     "url": "https://github.com/aze3ma/react-app-rewire-sass",
     "type": "git"
+  },
+  "peerDependencies": {
+    "react-app-rewired": "^1.5.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3"
   }
 }
