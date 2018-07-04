@@ -1,6 +1,6 @@
 {
 	"name": "react-app-rewire-scss",
-	"version": "1.0.17",
+	"version": "1.0.18",
 	"main": "index.js",
 	"license": "MIT",
 	"author": "Mahmoud Abdulazim <aze3ma@gmail.com>",
@@ -11,10 +11,8 @@
 		"type": "git"
 	},
 	"dependencies": {
-		"hoek": "^5.0.3",
 		"node-sass": "^4.9.0",
-		"sass-loader": "^7.0.3",
-		"tunnel-agent": "^0.6.0"
+		"sass-loader": "^7.0.3"
 	},
 	"devDependencies": {},
 	"peerDependencies": {
