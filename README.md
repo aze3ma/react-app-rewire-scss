@@ -13,7 +13,7 @@ $ npm install react-app-rewired react-app-rewire-scss --save-dev
 
 # Add it to your project
 
-* [Rewire your app](https://github.com/timarney/react-app-rewired#how-to-rewire-your-create-react-app-project) than modify `config-overrides.js`
+* [Rewire your app](https://github.com/timarney/react-app-rewired#how-to-rewire-your-create-react-app-project) then modify `config-overrides.js`
 
 ```javascript
 const rewireSass = require('react-app-rewire-scss');
