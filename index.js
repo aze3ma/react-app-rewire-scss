@@ -19,9 +19,10 @@ function createRewireSass(sassLoaderOptions = {}) {
 				use: [...cssRules.use, { loader: 'sass-loader', options: sassLoaderOptions }],
 			};
 		} else {
+      const cssRuleLoader = cssRules.loader || cssRules.use;
 			sassRules = {
 				test: sassExtension,
-				use: [...cssRules.loader, { loader: 'sass-loader', options: sassLoaderOptions }],
+				use: [...cssRuleLoader, { loader: 'sass-loader', options: sassLoaderOptions }],
 			};
 		}
 
